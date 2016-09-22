@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/userCell"
+    android:transitionName="cell"
+    android:paddingLeft="220dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:textAlignment="viewStart"
+        android:id="@+id/nameView"
+        android:paddingTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:textAlignment="viewStart"
+        android:id="@+id/spaceView"
+        android:paddingTop="45dp"
+        android:layout_alignTop="@+id/nameView"
+        android:layout_alignStart="@+id/nameView" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:textAlignment="viewStart"
+        android:id="@+id/dateTimeView"
+        android:paddingTop="85dp"
+        android:layout_alignTop="@+id/nameView"
+        android:layout_alignStart="@+id/nameView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/nameView"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+    //1st for every new field you need another textview here
+</RelativeLayout>
