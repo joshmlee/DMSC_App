@@ -42,6 +42,7 @@ public class MainActivity extends ListActivity {
         clayton.setDateTime("9/22 | 7:00pm");
         josh.setColor("White");
         //hi there
+        //hello
 
         users = new User[]{clayton, jeff, josh};
 
