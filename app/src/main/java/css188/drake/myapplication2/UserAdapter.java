@@ -22,6 +22,7 @@ public class UserAdapter extends BaseAdapter{
         myUsers = users;
     }
 
+
     @Override
     public int getCount() {
         return myUsers.length;
