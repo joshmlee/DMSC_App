@@ -11,21 +11,35 @@
     <!--make sure the android:layout_weight all sums up to 12 equally-->
 
 
-    <TextView
+
+
+    <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:inputType="textPersonName"
-        android:text="EVENTS"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:padding="5dp"
-        android:textSize="50dp"
-        android:background="@color/lightGreenColor"
-        android:textColor="@color/whiteColor"
-        android:textStyle="bold" />
+        android:layout_height="75dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:inputType="textPersonName"
+            android:text="EVENTS"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:textSize="50dp"
+            android:background="@color/lightGreenColor"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="115dp"
+            android:layout_height="69dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/icon"
+            android:layout_weight="16.31" />
+    </RelativeLayout>
+
 
     <LinearLayout
         android:orientation="horizontal"

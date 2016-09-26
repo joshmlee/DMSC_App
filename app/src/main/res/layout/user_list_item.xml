@@ -48,6 +48,6 @@
         android:padding="10dp"
         android:layout_alignParentRight="@+id/titleView"
         android:layout_alignParentStart="true"
-        android:src="@drawable/dmsclistimage" />
+        android:src="@drawable/listimage"/>
     <!--1st for every new field you need another textview here-->
 </RelativeLayout>
