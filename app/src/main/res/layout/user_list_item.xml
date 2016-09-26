@@ -3,7 +3,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:id="@+id/userCell"
     android:transitionName="cell"
-    android:paddingLeft="220dp"
     android:layout_height="match_parent">
 
     <TextView
@@ -12,9 +11,12 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Large Text"
         android:textAlignment="viewStart"
-        android:id="@+id/nameView"
+        android:id="@+id/titleView"
         android:paddingTop="20dp"
+        android:paddingLeft="60dp"
         android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:ellipsize="end"
         android:layout_toEndOf="@+id/imageView" />
     <TextView
         android:layout_width="match_parent"
@@ -23,9 +25,10 @@
         android:text="Large Text"
         android:textAlignment="viewStart"
         android:id="@+id/spaceView"
-        android:paddingTop="45dp"
-        android:layout_alignTop="@+id/nameView"
-        android:layout_alignStart="@+id/nameView" />
+        android:paddingTop="60dp"
+        android:paddingLeft="60dp"
+        android:layout_alignTop="@+id/titleView"
+        android:layout_alignStart="@+id/titleView" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -33,22 +36,18 @@
         android:text="Large Text"
         android:textAlignment="viewStart"
         android:id="@+id/dateTimeView"
-        android:paddingTop="85dp"
-        android:layout_alignTop="@+id/nameView"
-        android:layout_alignStart="@+id/nameView" />
+        android:paddingTop="95dp"
+        android:paddingLeft="60dp"
+        android:layout_alignTop="@+id/titleView"
+        android:layout_alignStart="@+id/titleView" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:id="@+id/imageView"
-        android:layout_below="@+id/nameView"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
-        android:layout_below="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
-    //1st for every new field you need another textview here
+        android:padding="10dp"
+        android:layout_alignParentRight="@+id/titleView"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/dmsclistimage" />
+    <!--1st for every new field you need another textview here-->
 </RelativeLayout>

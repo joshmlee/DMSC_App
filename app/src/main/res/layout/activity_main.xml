@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:background="@color/whiteColor">
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/my_string"
-        android:id="@+id/button"
-        android:layout_below="@+id/editText"
-        android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/editText" />
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    android:weightSum="12">
+    <!--make sure the android:layout_weight all sums up to 12 equally-->
 
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0"
         android:inputType="textPersonName"
         android:text="EVENTS"
         android:ems="10"
@@ -32,26 +27,67 @@
         android:textColor="@color/whiteColor"
         android:textStyle="bold" />
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:layout_weight="2">
+        <!--android:elevation="2dp"-->
+        <!--android:background="@drawable/shadow"-->
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton"
+            android:src="@drawable/dmscicon"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@color/whiteColor" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton2"
+            android:src="@drawable/dmscicon"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@color/whiteColor" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton3"
+            android:src="@drawable/dmscicon"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@color/whiteColor" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton4"
+            android:src="@drawable/dmscicon"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@color/whiteColor" />
+
+    </LinearLayout>
+
     <ListView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="350dp"
+        android:layout_weight="10"
         android:id="@android:id/list"
-        android:layout_below="@+id/button"
         android:divider="@color/blackColor"
         android:dividerHeight="0.5dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_alignParentStart="true" />
+        android:layout_marginBottom="0dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@android:id/empty"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-</RelativeLayout>
+</LinearLayout>

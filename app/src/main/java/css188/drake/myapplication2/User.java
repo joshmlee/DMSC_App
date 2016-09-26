@@ -4,28 +4,46 @@ package css188.drake.myapplication2;
  * Created by clayton on 9/12/16.
  */
 public class User {
-    private String name;
-    private String color;
+//    private String name;
+//    private String color;
     //changes I have made to add the items we want
     private String title;
     private String space;
     private String dateTime;
+    private boolean isHeader;
+    private String imagePath;
 
-    public String getName() {
-        return name;
+    public String getImagePath() {
+        return imagePath;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
     }
 
-    public String getColor() {
-        return color;
+    public boolean isHeader() {
+        return isHeader;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public void setHeader(boolean header) {
+        isHeader = header;
     }
+
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public String getColor() {
+//        return color;
+//    }
+//
+//    public void setColor(String color) {
+//        this.color = color;
+//    }
 
     public String getTitle() {
         return title;
